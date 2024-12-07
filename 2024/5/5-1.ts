@@ -1,5 +1,6 @@
-const [ruleInput, updateInput] =
-  Deno.readTextFileSync("./input.txt").split("\n\n");
+const [ruleInput, updateInput] = Deno.readTextFileSync(
+  import.meta.dirname + "/input.txt"
+).split("\n\n");
 
 const rules = ruleInput
   .split("\n")

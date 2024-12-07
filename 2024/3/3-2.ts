@@ -1,4 +1,4 @@
-const input = Deno.readTextFileSync("./input.txt");
+const input = Deno.readTextFileSync(import.meta.dirname + "/input.txt");
 
 const operations = [
   ...input.matchAll(/(do\(\))|don't\(\)|(mul\((?<num1>\d+),(?<num2>\d+)\))/g),

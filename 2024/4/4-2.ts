@@ -1,4 +1,4 @@
-const input = Deno.readTextFileSync("./input.txt")
+const input = Deno.readTextFileSync(import.meta.dirname + "/input.txt")
   .split("\n")
   .map((line) => line.split(""));
 

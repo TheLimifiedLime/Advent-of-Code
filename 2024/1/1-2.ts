@@ -1,5 +1,7 @@
 // Split input into the two lists
-const items = Deno.readTextFileSync("input.txt").split("\n");
+const items = Deno.readTextFileSync(import.meta.dirname + "/input.txt").split(
+  "\n"
+);
 const listA: number[] = [];
 const listB: number[] = [];
 items.forEach((string) => {

@@ -1,5 +1,5 @@
 // Split input into the two lists
-const reports = Deno.readTextFileSync("./input.txt")
+const reports = Deno.readTextFileSync(import.meta.dirname + "/input.txt")
   .split("\n")
   .map((value) => {
     return value.split(" ").map((value) => Number(value));
